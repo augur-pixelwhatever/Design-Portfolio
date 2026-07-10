@@ -1,3 +1,4 @@
+import { asset } from '@/lib/asset';
 import PageWrapper from '@/components/PageWrapper';
 import BackToTop from '@/components/BackToTop';
 
@@ -22,7 +23,7 @@ export default function ArtworkPage() {
 
       {/* Curvy divider */}
       <div className="w-[1180px] mx-auto mt-[80px]">
-        <img src="/images/Line%20Divider%20Curvy.svg" alt="" className="w-full" />
+        <img src={asset('/images/Line%20Divider%20Curvy.svg')} alt="" className="w-full" />
       </div>
 
       {/* Rendering section */}
@@ -36,21 +37,21 @@ export default function ArtworkPage() {
           <div className="flex gap-[28px]">
             <div className="w-[375px] h-[532px] flex-shrink-0">
               <img
-                src="/images/aegis_seasonal.png"
+                src={asset('/images/aegis_seasonal.png')}
                 alt="Aegis Seasonal zine submission"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-[373px] h-[532px] flex-shrink-0">
               <img
-                src="/images/xeno_compendium.png"
+                src={asset('/images/xeno_compendium.png')}
                 alt="Xeno Compendium zine submission"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-[340px] h-[532px] flex-shrink-0">
               <img
-                src="/images/book_cover.png"
+                src={asset('/images/book_cover.png')}
                 alt="Book cover illustration"
                 className="w-full h-full object-cover"
               />
@@ -61,14 +62,14 @@ export default function ArtworkPage() {
           <div className="flex gap-[28px]">
             <div className="w-[375px] h-[482px] flex-shrink-0">
               <img
-                src="/images/ouroborous.png"
+                src={asset('/images/ouroborous.png')}
                 alt="Ouroborous illustration"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-[758px] h-[430px] flex-shrink-0">
               <img
-                src="/images/distant_future.png"
+                src={asset('/images/distant_future.png')}
                 alt="Distant Future illustration"
                 className="w-full h-full object-cover"
               />
@@ -79,14 +80,14 @@ export default function ArtworkPage() {
           <div className="flex gap-[28px]">
             <div className="w-[375px] h-[674px] flex-shrink-0">
               <img
-                src="/images/balance_comic.png"
+                src={asset('/images/balance_comic.png')}
                 alt="Balance comic page"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-[765px] h-[541px] flex-shrink-0">
               <img
-                src="/images/miran_archives.png"
+                src={asset('/images/miran_archives.png')}
                 alt="Miran Archives zine submission"
                 className="w-full h-full object-cover"
               />
@@ -97,14 +98,14 @@ export default function ArtworkPage() {
           <div className="flex gap-[28px]">
             <div className="w-[375px] h-[391px] flex-shrink-0">
               <img
-                src="/images/felanostra.png"
+                src={asset('/images/felanostra.png')}
                 alt="Felanostra illustration"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-[765px] h-[425px] flex-shrink-0">
               <img
-                src="/images/snowymountain.png"
+                src={asset('/images/snowymountain.png')}
                 alt="Snowy Mountain illustration"
                 className="w-full h-full object-cover"
               />
@@ -128,14 +129,14 @@ export default function ArtworkPage() {
           <div className="flex gap-[10px] mb-[0px]">
             <div className="w-[571px] h-[306px]">
               <img
-                src="/images/sol_reference.png"
+                src={asset('/images/sol_reference.png')}
                 alt="Sol character reference sheet"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-[571px] h-[306px]">
               <img
-                src="/images/florian_reference.png"
+                src={asset('/images/florian_reference.png')}
                 alt="Florian character reference sheet"
                 className="w-full h-full object-cover"
               />
@@ -144,14 +145,14 @@ export default function ArtworkPage() {
           <div className="flex gap-[10px]">
             <div className="w-[571px] h-[306px]">
               <img
-                src="/images/iskra_reference.png"
+                src={asset('/images/iskra_reference.png')}
                 alt="Iskra character reference sheet"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-[571px] h-[306px]">
               <img
-                src="/images/fifteen_reference.png"
+                src={asset('/images/fifteen_reference.png')}
                 alt="Fifteen character reference sheet"
                 className="w-full h-full object-cover"
               />
@@ -163,14 +164,14 @@ export default function ArtworkPage() {
         <div className="flex gap-[16px] mt-[25px]">
           <div className="w-[590px] h-[267px] flex-shrink-0">
             <img
-              src="/images/timeloop_party_map.png"
+              src={asset('/images/timeloop_party_map.png')}
               alt="Timeloop party map"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="w-[516px] h-[263px] flex-shrink-0">
             <img
-              src="/images/main_menu_examples.gif"
+              src={asset('/images/main_menu_examples.gif')}
               alt="Main menu examples animation"
               className="w-full h-full object-cover"
             />
@@ -181,12 +182,12 @@ export default function ArtworkPage() {
         <div className="flex gap-[40px] mt-[28px]">
           <div className="flex gap-[10px]">
             <img
-              src="/images/sol_idle_front.gif"
+              src={asset('/images/sol_idle_front.gif')}
               alt="Sol idle front sprite"
               className="w-[141px] h-[233px] object-cover"
             />
             <img
-              src="/images/sol_idle_back.gif"
+              src={asset('/images/sol_idle_back.gif')}
               alt="Sol idle back sprite"
               className="w-[141px] h-[233px] object-cover"
             />
@@ -197,34 +198,34 @@ export default function ArtworkPage() {
         <div className="flex gap-[70px] mt-[20px]">
           <div className="flex gap-[10px]">
             <img
-              src="/images/sol_walk_front.gif"
+              src={asset('/images/sol_walk_front.gif')}
               alt="Sol walk front sprite"
               className="w-[141px] h-[233px] object-cover"
             />
             <img
-              src="/images/sol_walk_side.gif"
+              src={asset('/images/sol_walk_side.gif')}
               alt="Sol walk side sprite"
               className="w-[142px] h-[233px] object-cover"
             />
             <img
-              src="/images/sol_walk_back.gif"
+              src={asset('/images/sol_walk_back.gif')}
               alt="Sol walk back sprite"
               className="w-[141px] h-[233px] object-cover"
             />
           </div>
           <div className="flex gap-[10px]">
             <img
-              src="/images/sol_run_front.gif"
+              src={asset('/images/sol_run_front.gif')}
               alt="Sol run front sprite"
               className="w-[181px] h-[233px] object-cover"
             />
             <img
-              src="/images/sol_run_back.gif"
+              src={asset('/images/sol_run_back.gif')}
               alt="Sol run back sprite"
               className="w-[182px] h-[233px] object-cover"
             />
             <img
-              src="/images/sol_run_side.gif"
+              src={asset('/images/sol_run_side.gif')}
               alt="Sol run side sprite"
               className="w-[228px] h-[233px] object-cover"
             />
@@ -234,22 +235,22 @@ export default function ArtworkPage() {
         {/* Battle animations */}
         <div className="flex gap-[14px] mt-[24px]">
           <img
-            src="/images/sol_battle.gif"
+            src={asset('/images/sol_battle.gif')}
             alt="Sol battle animation"
             className="w-[300px] h-[278px] object-cover"
           />
           <img
-            src="/images/florian_battle.gif"
+            src={asset('/images/florian_battle.gif')}
             alt="Florian battle animation"
             className="w-[209px] h-[278px] object-cover"
           />
           <img
-            src="/images/iskra_battle.gif"
+            src={asset('/images/iskra_battle.gif')}
             alt="Iskra battle animation"
             className="w-[293px] h-[278px] object-cover"
           />
           <img
-            src="/images/fifteen_battle.gif"
+            src={asset('/images/fifteen_battle.gif')}
             alt="Fifteen battle animation"
             className="w-[295px] h-[278px] object-cover"
           />
@@ -265,23 +266,23 @@ export default function ArtworkPage() {
         <div className="flex flex-col">
           <div className="flex items-start gap-[28px]">
             <img
-              src="/images/cleanup_designs.png"
+              src={asset('/images/cleanup_designs.png')}
               alt="Cleanup Crew character designs"
               className="w-[399px] h-[249px] object-cover flex-shrink-0"
             />
             <img
-              src="/images/cleanup_elendia.png"
+              src={asset('/images/cleanup_elendia.png')}
               alt="Cleanup Crew Elendia character"
               className="w-[430px] h-auto"
             />
           </div>
           <img
-            src="/images/cleanup_keyimages.png"
+            src={asset('/images/cleanup_keyimages.png')}
             alt="Cleanup Crew key images"
             className="w-[815px] h-auto mt-[13px]"
           />
           <img
-            src="/images/cleanup_flats.png"
+            src={asset('/images/cleanup_flats.png')}
             alt="Cleanup Crew character flats"
             className="w-[815px] h-auto mt-[13px]"
           />

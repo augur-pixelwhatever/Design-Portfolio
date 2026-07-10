@@ -1,3 +1,4 @@
+import { asset } from '@/lib/asset';
 import PageWrapper from '@/components/PageWrapper';
 import ProjectSelector from '@/components/ProjectSelector';
 import BackToTop from '@/components/BackToTop';
@@ -12,14 +13,14 @@ export default function NookPage() {
         <div className="max-w-[1440px] mx-auto flex items-center h-[650px]">
           <div className="pl-[120px] flex-shrink-0">
             <img
-              src="/images/nook/nook-logo.svg"
+              src={asset('/images/nook/nook-logo.svg')}
               alt="Nook logo"
               className="w-[456px] h-[105px] object-contain"
             />
           </div>
           <div className="ml-auto relative h-full flex-shrink-0 w-[800px]">
             <img
-              src="/images/nook/image%20179.png"
+              src={asset('/images/nook/image%20179.png')}
               alt="Nook app phone mockups"
               className="w-full h-full object-cover object-top"
             />
@@ -61,10 +62,10 @@ export default function NookPage() {
             loop
             playsInline
           >
-            <source src="/images/nook/thinking-of-u.mp4" type="video/mp4" />
+            <source src={asset('/images/nook/thinking-of-u.mp4')} type="video/mp4" />
           </video>
           <img
-            src="/images/nook/Mockup%202.png"
+            src={asset('/images/nook/Mockup%202.png')}
             alt="Nook phone mockup"
             className="w-[156px] h-[319px] object-contain"
           />
@@ -112,7 +113,7 @@ export default function NookPage() {
           ].map((member) => (
             <div key={member.name} className="flex flex-col items-center gap-[12px]">
               <img
-                src={`/images/nook/${member.img}`}
+                src={asset(`/images/nook/${member.img}`)}
                 alt={member.name}
                 className="w-[140px] h-[140px] rounded-full object-cover"
               />
@@ -166,7 +167,7 @@ export default function NookPage() {
           <div className="flex-1">
             <div className="w-[454px] h-[267px] rounded-[13px] overflow-hidden">
               <img
-                src="/images/nook/Rectangle%201.png"
+                src={asset('/images/nook/Rectangle%201.png')}
                 alt="Research compilation"
                 className="w-full h-full object-cover"
               />
@@ -181,7 +182,7 @@ export default function NookPage() {
         <div className="flex gap-[60px] mt-[40px] pl-[56px]">
           <div className="w-[493px] h-[457px] flex-shrink-0">
             <img
-              src="/images/nook/image%20181.png"
+              src={asset('/images/nook/image%20181.png')}
               alt="Research findings compilation"
               className="w-full h-full object-cover"
             />
@@ -235,7 +236,7 @@ export default function NookPage() {
 
           <div className="w-[430px] h-[417px] flex-shrink-0">
             <img
-              src="/images/nook/image%20180.png"
+              src={asset('/images/nook/image%20180.png')}
               alt="Competitor analysis matrix"
               className="w-full h-full object-cover"
             />
@@ -246,7 +247,7 @@ export default function NookPage() {
         <div className="flex gap-[60px] mt-[40px] pl-[56px]">
           <div className="w-[559px] h-[218px] flex-shrink-0">
             <img
-              src="/images/nook/image%20185.png"
+              src={asset('/images/nook/image%20185.png')}
               alt="Market analysis chart"
               className="w-full h-full object-cover"
             />
@@ -274,13 +275,13 @@ export default function NookPage() {
         </p>
         <div className="flex gap-[16px]">
           <div className="w-[328px] h-[220px]">
-            <img src="/images/nook/image%20183.png" alt="Moodboard 1" className="w-full h-full object-cover" />
+            <img src={asset('/images/nook/image%20183.png')} alt="Moodboard 1" className="w-full h-full object-cover" />
           </div>
           <div className="w-[344px] h-[220px]">
-            <img src="/images/nook/image%20182.png" alt="Moodboard 2" className="w-full h-full object-cover" />
+            <img src={asset('/images/nook/image%20182.png')} alt="Moodboard 2" className="w-full h-full object-cover" />
           </div>
           <div className="w-[336px] h-[220px]">
-            <img src="/images/nook/image%20184.png" alt="Moodboard 3" className="w-full h-full object-cover" />
+            <img src={asset('/images/nook/image%20184.png')} alt="Moodboard 3" className="w-full h-full object-cover" />
           </div>
         </div>
       </section>
@@ -315,7 +316,7 @@ export default function NookPage() {
 
           <div className="w-[447px] h-[447px] flex-shrink-0">
             <img
-              src="/images/nook/image%20186.png"
+              src={asset('/images/nook/image%20186.png')}
               alt="User personas"
               className="w-full h-full object-cover"
             />
@@ -331,7 +332,7 @@ export default function NookPage() {
         <div className="flex gap-[60px] mt-[50px] pl-[56px]">
           <div className="w-[489px] h-[376px] flex-shrink-0">
             <img
-              src="/images/nook/image%20187.png"
+              src={asset('/images/nook/image%20187.png')}
               alt="Feature brainstorming"
               className="w-full h-full object-cover"
             />
@@ -358,16 +359,16 @@ export default function NookPage() {
       <section className="w-full bg-[#ffe3f6] mt-[80px] py-[60px]">
         <div className="max-w-[1440px] mx-auto flex items-end justify-center gap-[16px] px-[60px]">
           <div className="w-[485px] h-[250px] flex-shrink-0">
-            <img src="/images/nook/image%20188.png" alt="Low-fi wireframes" className="w-full h-full object-contain" />
+            <img src={asset('/images/nook/image%20188.png')} alt="Low-fi wireframes" className="w-full h-full object-contain" />
           </div>
           <div className="w-[113px] h-[250px] flex-shrink-0">
-            <img src="/images/nook/image%20191.png" alt="Wireframe flow" className="w-full h-full object-contain" />
+            <img src={asset('/images/nook/image%20191.png')} alt="Wireframe flow" className="w-full h-full object-contain" />
           </div>
           <div className="w-[240px] h-[241px] flex-shrink-0">
-            <img src="/images/nook/image%20190.png" alt="Wireframe screens" className="w-full h-full object-contain" />
+            <img src={asset('/images/nook/image%20190.png')} alt="Wireframe screens" className="w-full h-full object-contain" />
           </div>
           <div className="w-[313px] h-[74px] flex-shrink-0">
-            <img src="/images/nook/image%20189.png" alt="Wireframe detail" className="w-full h-full object-contain" />
+            <img src={asset('/images/nook/image%20189.png')} alt="Wireframe detail" className="w-full h-full object-contain" />
           </div>
         </div>
       </section>
@@ -400,16 +401,16 @@ export default function NookPage() {
           {/* 4 Moodboard Grid */}
           <div className="grid grid-cols-2 gap-[12px] flex-shrink-0">
             <div className="w-[254px] h-[201px]">
-              <img src="/images/nook/image%20192.png" alt="Moodboard option 1" className="w-full h-full object-cover" />
+              <img src={asset('/images/nook/image%20192.png')} alt="Moodboard option 1" className="w-full h-full object-cover" />
             </div>
             <div className="w-[254px] h-[201px]">
-              <img src="/images/nook/image%20193.png" alt="Moodboard option 2" className="w-full h-full object-cover" />
+              <img src={asset('/images/nook/image%20193.png')} alt="Moodboard option 2" className="w-full h-full object-cover" />
             </div>
             <div className="w-[254px] h-[201px]">
-              <img src="/images/nook/image%20194.png" alt="Moodboard option 3" className="w-full h-full object-cover" />
+              <img src={asset('/images/nook/image%20194.png')} alt="Moodboard option 3" className="w-full h-full object-cover" />
             </div>
             <div className="w-[254px] h-[201px]">
-              <img src="/images/nook/image%20195.png" alt="Moodboard option 4" className="w-full h-full object-cover" />
+              <img src={asset('/images/nook/image%20195.png')} alt="Moodboard option 4" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -423,7 +424,7 @@ export default function NookPage() {
           {['196', '197', '198', '199', '200', '201', '202', '203'].map((num) => (
             <div key={num} className="w-[119px] h-[259px] flex-shrink-0">
               <img
-                src={`/images/nook/image%20${num}.png`}
+                src={asset(`/images/nook/image%20${num}.png`)}
                 alt={`Mid-fidelity screen ${num}`}
                 className="w-full h-full object-contain"
               />
@@ -461,7 +462,7 @@ export default function NookPage() {
           {['206', '205', '207', '208', '214', '215', '211', '212', '213'].map((num) => (
             <div key={num} className={`w-[128px] flex-shrink-0 ${num === '211' ? 'h-[310px]' : 'h-[277px]'}`}>
               <img
-                src={`/images/nook/image%20${num}.png`}
+                src={asset(`/images/nook/image%20${num}.png`)}
                 alt={`Final Nook screen`}
                 className="w-full h-full object-contain"
               />

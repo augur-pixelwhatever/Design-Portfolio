@@ -1,3 +1,4 @@
+import { asset } from '@/lib/asset';
 import Link from 'next/link';
 
 const projects = [
@@ -19,7 +20,7 @@ export default function ProjectSelector({ current }: ProjectSelectorProps) {
     <div className="w-[1440px] flex items-center justify-center gap-[20px] py-[40px]">
       <Link href={prev.href} aria-label={`Previous project: ${prev.name}`}>
         <img
-          src="/images/project-selector-arrow-left.svg"
+          src={asset('/images/project-selector-arrow-left.svg')}
           alt=""
           className="w-[10px] h-[28px]"
         />
@@ -29,7 +30,7 @@ export default function ProjectSelector({ current }: ProjectSelectorProps) {
       </h2>
       <Link href={next.href} aria-label={`Next project: ${next.name}`}>
         <img
-          src="/images/project-selector-arrow-right.svg"
+          src={asset('/images/project-selector-arrow-right.svg')}
           alt=""
           className="w-[10px] h-[28px]"
         />

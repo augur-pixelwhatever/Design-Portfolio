@@ -1,3 +1,4 @@
+import { asset } from '@/lib/asset';
 import PageWrapper from '@/components/PageWrapper';
 
 export default function AboutPage() {
@@ -5,8 +6,8 @@ export default function AboutPage() {
     <PageWrapper>
       {/* BG Decoration ellipses */}
       <div className="absolute left-0 top-[331px] w-[1440px] pointer-events-none z-0">
-        <img src="/images/Ellipse%203.svg" alt="" className="absolute left-[93px] top-[745px] w-[473px]" />
-        <img src="/images/Ellipse%204.svg" alt="" className="absolute left-[852px] top-[23px] w-[518px]" />
+        <img src={asset('/images/Ellipse%203.svg')} alt="" className="absolute left-[93px] top-[745px] w-[473px]" />
+        <img src={asset('/images/Ellipse%204.svg')} alt="" className="absolute left-[852px] top-[23px] w-[518px]" />
       </div>
 
       {/* About heading */}
@@ -20,7 +21,7 @@ export default function AboutPage() {
           {/* Photo */}
           <div className="w-[513px] h-[599px] rounded-[20px] overflow-hidden flex-shrink-0">
             <img
-              src="/images/thats_me.png"
+              src={asset('/images/thats_me.png')}
               alt="Katherine De Zilva"
               className="w-full h-full object-cover"
             />
@@ -46,7 +47,7 @@ export default function AboutPage() {
 
         {/* Augur swing decoration */}
         <img
-          src="/images/augur_swing.gif"
+          src={asset('/images/augur_swing.gif')}
           alt="Decorative animation of a character on a swing"
           className="absolute left-[494px] top-[610px] w-[335px] h-[335px] object-contain"
         />
@@ -54,7 +55,7 @@ export default function AboutPage() {
 
       {/* Curvy divider */}
       <div className="w-[1180px] mx-auto mt-[200px] relative z-10">
-        <img src="/images/Line%20Divider%20Curvy.svg" alt="" className="w-full" />
+        <img src={asset('/images/Line%20Divider%20Curvy.svg')} alt="" className="w-full" />
       </div>
 
       {/* Design Methodology */}
@@ -63,7 +64,7 @@ export default function AboutPage() {
           {/* Column 1 */}
           <div className="w-[348px]">
             <img
-              src="/images/grid%201.png"
+              src={asset('/images/grid%201.png')}
               alt="Human-centered design icon"
               className="w-[174px] h-[109px] object-contain mb-[40px] mx-auto block"
             />
@@ -77,7 +78,7 @@ export default function AboutPage() {
           {/* Column 2 */}
           <div className="w-[348px]">
             <img
-              src="/images/grid%202.png"
+              src={asset('/images/grid%202.png')}
               alt="Research and understanding icon"
               className="w-[166px] h-[106px] object-contain mb-[42px] mx-auto block"
             />
@@ -91,7 +92,7 @@ export default function AboutPage() {
           {/* Column 3 */}
           <div className="w-[348px]">
             <img
-              src="/images/grid%203.png"
+              src={asset('/images/grid%203.png')}
               alt="Iteration and testing icon"
               className="w-[186px] h-[132px] object-contain mb-[14px] mx-auto block"
             />

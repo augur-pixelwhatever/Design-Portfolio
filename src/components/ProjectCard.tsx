@@ -1,3 +1,4 @@
+import { asset } from '@/lib/asset';
 import Link from 'next/link';
 import type { Project } from '@/content/projects';
 
@@ -16,14 +17,14 @@ export default function ProjectCard({ project }: { project: Project }) {
         {/* Image */}
         {project.slug === 'bytesize' && (
           <img
-            src={project.cardImage}
+            src={asset(project.cardImage)}
             alt={project.cardImageAlt}
             className="absolute left-[89px] top-[105px] w-[502px] h-[486px] object-contain"
           />
         )}
         {project.slug === 'ocf' && (
           <img
-            src={project.cardImage}
+            src={asset(project.cardImage)}
             alt={project.cardImageAlt}
             className="absolute left-[628px] top-[107px] w-[514px] h-[377px] object-cover"
           />
@@ -31,12 +32,12 @@ export default function ProjectCard({ project }: { project: Project }) {
         {project.slug === 'nook' && (
           <>
             <img
-              src="/images/home-nook-logo.svg"
+              src={asset('/images/home-nook-logo.svg')}
               alt="Nook logo"
               className="absolute left-[157px] top-[131px] w-[226px] h-[52px]"
             />
             <img
-              src={project.cardImage}
+              src={asset(project.cardImage)}
               alt={project.cardImageAlt}
               className="absolute left-[59px] top-[214px] w-[487px] h-[377px] object-contain"
             />

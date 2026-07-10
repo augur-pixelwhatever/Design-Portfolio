@@ -1,5 +1,7 @@
 'use client';
 
+import { asset } from '@/lib/asset';
+
 export default function BackToTop() {
   return (
     <button
@@ -7,7 +9,7 @@ export default function BackToTop() {
       className="absolute right-[80px] top-[60px] w-[28px] h-[14px] cursor-pointer"
       aria-label="Back to top"
     >
-      <img src="/images/back-to-top.svg" alt="Back to top" className="w-full h-full" />
+      <img src={asset('/images/back-to-top.svg')} alt="Back to top" className="w-full h-full" />
     </button>
   );
 }

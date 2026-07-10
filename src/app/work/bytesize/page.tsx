@@ -1,3 +1,4 @@
+import { asset } from '@/lib/asset';
 import PageWrapper from '@/components/PageWrapper';
 import ProjectSelector from '@/components/ProjectSelector';
 import BackToTop from '@/components/BackToTop';
@@ -10,7 +11,7 @@ export default function BytesizePage() {
       {/* Hero Image */}
       <section className="w-full overflow-hidden">
         <img
-          src="/images/bytesize/Hero%20Image.png"
+          src={asset('/images/bytesize/Hero%20Image.png')}
           alt="bytesize hero — food photography with recipe app interface"
           className="w-[1444px] h-[650px] mx-auto object-cover"
         />
@@ -53,7 +54,7 @@ export default function BytesizePage() {
             loop
             playsInline
           >
-            <source src="/images/bytesize/example%20(1).mp4" type="video/mp4" />
+            <source src={asset('/images/bytesize/example%20(1).mp4')} type="video/mp4" />
           </video>
         </div>
       </section>
@@ -142,17 +143,17 @@ export default function BytesizePage() {
 
           <div className="relative w-[466px] h-[306px] shrink-0">
             <img
-              src="/images/bytesize/image%2097.png"
+              src={asset('/images/bytesize/image%2097.png')}
               alt="Phone mockup showing recipe app"
               className="absolute left-0 top-[6px] w-[183px] h-[244px] object-cover"
             />
             <img
-              src="/images/bytesize/image%2098.png"
+              src={asset('/images/bytesize/image%2098.png')}
               alt="Phone mockup showing recipe detail"
               className="absolute left-[129px] top-[107px] w-[132px] h-[224px] object-cover"
             />
             <img
-              src="/images/bytesize/image%2096.png"
+              src={asset('/images/bytesize/image%2096.png')}
               alt="Phone mockup showing recipe list"
               className="absolute left-[237px] top-0 w-[229px] h-[306px] object-cover"
             />
@@ -171,12 +172,12 @@ export default function BytesizePage() {
         <div className="flex gap-[60px] mt-[40px]">
           <div className="w-[500px] shrink-0 flex flex-col gap-[24px]">
             <img
-              src="/images/bytesize/Group%20352.png"
+              src={asset('/images/bytesize/Group%20352.png')}
               alt="User personas and journey maps"
               className="w-[500px] h-[254px] object-cover"
             />
             <img
-              src="/images/bytesize/Group%2010%202.png"
+              src={asset('/images/bytesize/Group%2010%202.png')}
               alt="Journey map analysis"
               className="w-[500px] h-[254px] object-cover"
             />
@@ -256,7 +257,7 @@ export default function BytesizePage() {
             </p>
           </div>
           <img
-            src="/images/bytesize/image%20111.png"
+            src={asset('/images/bytesize/image%20111.png')}
             alt="OCR scanning and text recognition"
             className="w-[387px] h-[373px] object-cover shrink-0"
           />
@@ -264,7 +265,7 @@ export default function BytesizePage() {
 
         <div className="flex gap-[80px] mt-[50px]">
           <img
-            src="/images/bytesize/image%20144.png"
+            src={asset('/images/bytesize/image%20144.png')}
             alt="Site map and information architecture"
             className="w-[403px] h-[532px] object-cover shrink-0"
           />
@@ -300,12 +301,12 @@ export default function BytesizePage() {
 
         <div className="flex gap-[35px] mt-[60px]">
           <img
-            src="/images/bytesize/image%20114.png"
+            src={asset('/images/bytesize/image%20114.png')}
             alt="Recipe digitization interface iteration"
             className="w-[498px] h-[292px] object-cover"
           />
           <img
-            src="/images/bytesize/image%2024.png"
+            src={asset('/images/bytesize/image%2024.png')}
             alt="Recipe digitization comparison"
             className="w-[449px] h-[292px] object-cover"
           />
@@ -378,22 +379,22 @@ export default function BytesizePage() {
 
           <div className="relative w-[409px] h-[340px] shrink-0">
             <img
-              src="/images/bytesize/image%20121.png"
+              src={asset('/images/bytesize/image%20121.png')}
               alt="Branding iteration — casual style"
               className="absolute left-0 top-[36px] w-[195px] h-[122px] object-cover"
             />
             <img
-              src="/images/bytesize/image%20122.png"
+              src={asset('/images/bytesize/image%20122.png')}
               alt="Branding iteration — professional style"
               className="absolute left-[222px] top-0 w-[187px] h-[315px] object-cover"
             />
             <img
-              src="/images/bytesize/image%20123.png"
+              src={asset('/images/bytesize/image%20123.png')}
               alt="Branding iteration — typography"
               className="absolute left-0 top-[158px] w-[196px] h-[157px] object-cover"
             />
             <img
-              src="/images/bytesize/image%20120.png"
+              src={asset('/images/bytesize/image%20120.png')}
               alt="Branding iteration — color exploration"
               className="absolute left-[150px] top-[199px] w-[207px] h-[116px] object-cover"
             />
@@ -422,7 +423,7 @@ export default function BytesizePage() {
         ].map(({ file, h }) => (
           <img
             key={file}
-            src={`/images/bytesize/${file}`}
+            src={asset(`/images/bytesize/${file}`)}
             alt="Paper prototype wireframe"
             className="w-[122px] object-cover"
             style={{ height: h }}
@@ -467,18 +468,18 @@ export default function BytesizePage() {
           <div className="shrink-0">
             <div className="flex gap-[13px]">
               <img
-                src="/images/bytesize/image%2070.png"
+                src={asset('/images/bytesize/image%2070.png')}
                 alt="Logo iteration concepts"
                 className="w-[213px] h-[120px] object-cover"
               />
               <img
-                src="/images/bytesize/image%2072.png"
+                src={asset('/images/bytesize/image%2072.png')}
                 alt="Logo final versions"
                 className="w-[213px] h-[120px] object-cover"
               />
             </div>
             <img
-              src="/images/bytesize/image%20158.png"
+              src={asset('/images/bytesize/image%20158.png')}
               alt="bytesize final branding guide"
               className="w-[440px] h-[248px] object-cover mt-[22px]"
             />
@@ -507,7 +508,7 @@ export default function BytesizePage() {
           ].map(({ file, h }) => (
             <img
               key={file}
-              src={`/images/bytesize/${file}`}
+              src={asset(`/images/bytesize/${file}`)}
               alt="Mid-fidelity wireframe screen"
               className="w-[106px] object-cover"
               style={{ height: h }}
@@ -580,7 +581,7 @@ export default function BytesizePage() {
         ].map(({ file, h }) => (
           <img
             key={file}
-            src={`/images/bytesize/${file}`}
+            src={asset(`/images/bytesize/${file}`)}
             alt="Final app screen"
             className="w-[107px] object-cover"
             style={{ height: h }}

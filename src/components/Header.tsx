@@ -1,5 +1,7 @@
 'use client';
 
+import { asset } from '@/lib/asset';
+
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -25,22 +27,22 @@ export default function Header() {
     <header className="relative w-[1440px] h-[331px] bg-banner-mint">
       {/* Decorative vectors */}
       <img
-        src="/images/Yellow%20Group.svg"
+        src={asset('/images/Yellow%20Group.svg')}
         alt=""
         className="absolute left-[-52px] top-[152px] w-[383px] h-[179px] pointer-events-none"
       />
       <img
-        src="/images/Red%20Vector.svg"
+        src={asset('/images/Red%20Vector.svg')}
         alt=""
         className="absolute right-[67px] top-[-30px] w-[487px] h-[250px] pointer-events-none"
       />
       <img
-        src="/images/Green%20Vector.svg"
+        src={asset('/images/Green%20Vector.svg')}
         alt=""
         className="absolute left-[139px] top-[-30px] w-[399px] h-[112px] pointer-events-none"
       />
       <img
-        src="/images/Blue%20Group.svg"
+        src={asset('/images/Blue%20Group.svg')}
         alt=""
         className="absolute right-[73px] top-[223px] w-[265px] h-[108px] pointer-events-none"
       />

@@ -1,3 +1,4 @@
+import { asset } from '@/lib/asset';
 import PageWrapper from '@/components/PageWrapper';
 import ProjectCard from '@/components/ProjectCard';
 import { projects } from '@/content/projects';
@@ -7,10 +8,10 @@ export default function HomePage() {
     <PageWrapper>
       {/* BG Decoration ellipses */}
       <div className="absolute left-[-53px] top-[220px] w-[1447px] h-[2847px] pointer-events-none">
-        <img src="/images/Ellipse%203.svg" alt="" className="absolute left-[50px] top-[100px] w-[500px] opacity-60" />
-        <img src="/images/Ellipse%204.svg" alt="" className="absolute right-[50px] top-[300px] w-[550px] opacity-60" />
-        <img src="/images/Ellipse%205.svg" alt="" className="absolute left-[100px] top-[1200px] w-[480px] opacity-60" />
-        <img src="/images/Ellipse%206.svg" alt="" className="absolute right-[100px] top-[1600px] w-[520px] opacity-60" />
+        <img src={asset('/images/Ellipse%203.svg')} alt="" className="absolute left-[50px] top-[100px] w-[500px] opacity-60" />
+        <img src={asset('/images/Ellipse%204.svg')} alt="" className="absolute right-[50px] top-[300px] w-[550px] opacity-60" />
+        <img src={asset('/images/Ellipse%205.svg')} alt="" className="absolute left-[100px] top-[1200px] w-[480px] opacity-60" />
+        <img src={asset('/images/Ellipse%206.svg')} alt="" className="absolute right-[100px] top-[1600px] w-[520px] opacity-60" />
       </div>
 
       {/* Intro section */}
@@ -25,7 +26,7 @@ export default function HomePage() {
 
       {/* Curvy divider */}
       <div className="w-[1180px] mx-auto">
-        <img src="/images/Line%20Divider%20Curvy.svg" alt="" className="w-full" />
+        <img src={asset('/images/Line%20Divider%20Curvy.svg')} alt="" className="w-full" />
       </div>
 
       {/* Portfolio section */}

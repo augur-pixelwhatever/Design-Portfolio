@@ -1,3 +1,4 @@
+import { asset } from '@/lib/asset';
 import PageWrapper from '@/components/PageWrapper';
 import ProjectSelector from '@/components/ProjectSelector';
 import BackToTop from '@/components/BackToTop';
@@ -18,12 +19,12 @@ export default function OcfPage() {
       {/* Hero Band */}
       <section className="w-full bg-card-ocf relative">
         <img
-          src="/images/ocf/HERO%20IMAGE.png"
+          src={asset('/images/ocf/HERO%20IMAGE.png')}
           alt="OCF Redesign hero showing the redesigned website"
           className="w-full h-[648px] object-cover"
         />
         <img
-          src="/images/ocf/Group%20364.png"
+          src={asset('/images/ocf/Group%20364.png')}
           alt="The Oakville Community Foundation has all you need to make an impact"
           className="absolute bottom-0 left-1/2 -translate-x-1/2"
         />
@@ -49,7 +50,7 @@ export default function OcfPage() {
             loop
             playsInline
           >
-            <source src="/images/ocf/OCF%20Navigating.mp4" type="video/mp4" />
+            <source src={asset('/images/ocf/OCF%20Navigating.mp4')} type="video/mp4" />
           </video>
         </div>
       </section>
@@ -114,7 +115,7 @@ export default function OcfPage() {
           {teamMembers.map((member) => (
             <div key={member.name} className="flex flex-col items-center">
               <img
-                src={member.img}
+                src={asset(member.img)}
                 alt={member.name}
                 className="w-[144px] h-[144px] rounded-full object-cover"
               />
@@ -187,7 +188,7 @@ export default function OcfPage() {
           </div>
           <div className="flex-1 flex justify-center">
             <img
-              src="/images/ocf/image%205.png"
+              src={asset('/images/ocf/image%205.png')}
               alt="Affinity mapping board"
               className="w-[335px] h-[318px] object-cover"
             />
@@ -203,7 +204,7 @@ export default function OcfPage() {
         <div className="flex gap-[60px] pl-[56px] mt-[30px]">
           <div className="w-[496px] shrink-0">
             <img
-              src="/images/ocf/image%203.png"
+              src={asset('/images/ocf/image%203.png')}
               alt="5 Whys analysis"
               className="w-full h-[299px] object-cover rounded-[10px]"
             />
@@ -268,17 +269,17 @@ export default function OcfPage() {
           </div>
           <div className="relative w-[460px] h-[420px] shrink-0">
             <img
-              src="/images/ocf/image%208.png"
+              src={asset('/images/ocf/image%208.png')}
               alt="Competitor website screenshot"
               className="absolute top-0 right-0 w-[288px] h-[321px] object-cover"
             />
             <img
-              src="/images/ocf/image%207.png"
+              src={asset('/images/ocf/image%207.png')}
               alt="Competitor website screenshot"
               className="absolute top-[131px] left-0 w-[277px] h-[283px] object-cover"
             />
             <img
-              src="/images/ocf/image%206.png"
+              src={asset('/images/ocf/image%206.png')}
               alt="Competitor website screenshot"
               className="absolute top-[219px] right-[-10px] w-[261px] h-[195px] object-cover"
             />
@@ -289,7 +290,7 @@ export default function OcfPage() {
         <div className="flex gap-[40px] pl-[56px] mt-[50px]">
           <div className="w-[504px] shrink-0">
             <img
-              src="/images/ocf/image%2011.png"
+              src={asset('/images/ocf/image%2011.png')}
               alt="Persona and As-Is activity analysis"
               className="w-full h-[300px] object-cover rounded-[10px]"
             />
@@ -329,12 +330,12 @@ export default function OcfPage() {
         {/* Side by side images */}
         <div className="flex gap-[30px] pl-[56px] mt-[50px]">
           <img
-            src="/images/ocf/image%2010.png"
+            src={asset('/images/ocf/image%2010.png')}
             alt="User research findings"
             className="w-[471px] h-[345px] object-cover"
           />
           <img
-            src="/images/ocf/image%2015.png"
+            src={asset('/images/ocf/image%2015.png')}
             alt="Journey mapping insights"
             className="w-[465px] h-[343px] object-cover"
           />
@@ -345,32 +346,32 @@ export default function OcfPage() {
       <section className="w-full bg-card-ocf mt-[80px] py-[40px]">
         <div className="flex gap-[28px] items-start justify-center">
           <img
-            src="/images/ocf/wf1%201.png"
+            src={asset('/images/ocf/wf1%201.png')}
             alt="Low-fidelity wireframe"
             className="w-[122px] h-[488px] object-cover"
           />
           <img
-            src="/images/ocf/wf2%201.png"
+            src={asset('/images/ocf/wf2%201.png')}
             alt="Low-fidelity wireframe"
             className="w-[122px] h-[447px] object-cover"
           />
           <img
-            src="/images/ocf/ChatGPT%20Image%20Jul%208%2C%202025%2C%2012_33_56%20PM%201.png"
+            src={asset('/images/ocf/ChatGPT%20Image%20Jul%208%2C%202025%2C%2012_33_56%20PM%201.png')}
             alt="Wireframe exploration"
             className="w-[167px] h-[167px] object-cover"
           />
           <img
-            src="/images/ocf/ChatGPT%20Image%20Jul%209%2C%202025%2C%2010_15_25%20AM%201.png"
+            src={asset('/images/ocf/ChatGPT%20Image%20Jul%209%2C%202025%2C%2010_15_25%20AM%201.png')}
             alt="Wireframe exploration"
             className="w-[187px] h-[281px] object-cover"
           />
           <img
-            src="/images/ocf/image%20169.png"
+            src={asset('/images/ocf/image%20169.png')}
             alt="Wireframe detail"
             className="w-[134px] h-[490px] object-cover"
           />
           <img
-            src="/images/ocf/image%20170.png"
+            src={asset('/images/ocf/image%20170.png')}
             alt="Wireframe detail"
             className="w-[322px] h-[231px] object-cover"
           />
@@ -388,7 +389,7 @@ export default function OcfPage() {
         {/* Journey map image */}
         <div className="flex justify-center mt-[48px]">
           <img
-            src="/images/ocf/image%2012.png"
+            src={asset('/images/ocf/image%2012.png')}
             alt="Journey map showing user flow"
             className="w-[868px] h-[426px] object-cover"
           />
@@ -412,7 +413,7 @@ export default function OcfPage() {
         {/* User flow image (image 172) */}
         <div className="flex justify-center mt-[40px]">
           <img
-            src="/images/ocf/image%20172.png"
+            src={asset('/images/ocf/image%20172.png')}
             alt="Detailed user flow diagram"
             className="w-full h-auto"
           />
@@ -446,7 +447,7 @@ export default function OcfPage() {
           </div>
           <div className="flex-1">
             <img
-              src="/images/ocf/image%2014.png"
+              src={asset('/images/ocf/image%2014.png')}
               alt="Moodboard showing visual direction"
               className="w-[484px] h-[335px] object-cover rounded-[10px]"
             />
@@ -467,7 +468,7 @@ export default function OcfPage() {
 
         <div className="flex justify-center mt-[48px]">
           <img
-            src="/images/ocf/image%20171.png"
+            src={asset('/images/ocf/image%20171.png')}
             alt="High-fidelity wireframe overview"
             className="w-[987px] h-[555px] object-cover rounded-[13px]"
           />
@@ -489,7 +490,7 @@ export default function OcfPage() {
           ].map((img) => (
             <img
               key={img.src}
-              src={`/images/ocf/${img.src}`}
+              src={asset(`/images/ocf/${img.src}`)}
               alt={img.alt}
               className="w-[148px] h-auto"
             />
